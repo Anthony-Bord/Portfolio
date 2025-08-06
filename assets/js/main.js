@@ -334,3 +334,19 @@ document.querySelectorAll('.typewriter').forEach(el => {
   observer.observe(el);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // évite de rejouer l'animation
+      }
+    });
+  }, { threshold: 0.2 }); // déclenche quand 20% visible
+
+  document.querySelectorAll(".fade-up-title").forEach(el => {
+    observer.observe(el);
+  });
+});
+
+
