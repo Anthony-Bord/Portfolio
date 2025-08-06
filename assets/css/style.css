@@ -1720,3 +1720,25 @@ body.modal-open {
 .list-unstyled li {
   margin-bottom: 10px; /* Ajuste la valeur selon tes besoins */
 }
+
+.typewriter {
+  visibility: hidden; /* caché avant l'animation */
+}
+
+.photo {
+  min-width: 500px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+}
+
+.logo-entreprise {
+  position: absolute;
+  left: 15px; /* marge depuis le bord gauche */
+  top: 50%;
+  transform: translateY(-50%); /* centre verticalement dans le header */
+  height: 40px; /* ajuste la taille */
+  z-index: 10; /* reste au-dessus */
+}

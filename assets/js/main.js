@@ -303,3 +303,34 @@ document.querySelectorAll('.open-project').forEach(item => {
   });
 });
 
+function typeText(el, speed = 10) {
+  const text = el.textContent; // Récupère tout le texte original
+  el.textContent = "";          // Vide le contenu pour commencer
+  el.style.visibility = "visible";
+
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+
+// Observer pour déclencher au scroll
+const observer = new IntersectionObserver((entries, obs) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      typeText(entry.target, 10); // 30 ms par caractère
+      obs.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+// Lance l'observation sur tous les éléments .typewriter
+document.querySelectorAll('.typewriter').forEach(el => {
+  observer.observe(el);
+});
+

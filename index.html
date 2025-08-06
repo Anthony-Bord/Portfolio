@@ -28,6 +28,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <!-- =======================================================
   * Template Name: Laura - v4.10.0
   * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -42,14 +45,15 @@
   <header id="header" class="fixed-top d-flex justify-content-center align-items-center header-transparent">
     <div id="progress"></div>
 
+    <img class="logo-entreprise" src="assets/img/logo_entreprise.jpg">
     <nav id="navbar" class="navbar">
       <ul>
-        <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-        <li><a class="nav-link scrollto" href="#about">A propos</a></li>
-        <li><a class="nav-link scrollto" href="#resume">Parcours</a></li>
-        <li><a class="nav-link scrollto" href="#services">Témoignages</a></li>
-        <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto active typewriter" href="#hero">Accueil</a></li>
+        <li><a class="nav-link scrollto typewriter" href="#about">A propos</a></li>
+        <li><a class="nav-link scrollto typewriter" href="#resume">Parcours</a></li>
+        <li><a class="nav-link scrollto typewriter" href="#services">Témoignages</a></li>
+        <li><a class="nav-link scrollto typewriter" href="#portfolio">Portfolio</a></li>
+        <li><a class="nav-link scrollto typewriter" href="#contact">Contact</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -80,13 +84,14 @@
           <h2>A propos de moi</h2>
         </div>
         <div>
-         <p> A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR A REMPLIR </p>
+         <p class="typewriter"> Etudiant en marketing et marketing digital, je suis passionnée par les échanges vrais et les stratégies qui font sens. Mon approche repose sur l’écoute, la transparence et l’envie de créer des connexions durables entre les marques et leur audience.
+         </p>
         </div>
         <br>
 
         <div class="row">
           <div class="image col-lg-5 d-flex align-items-stretch justify-content-center">
-            <img src="assets/img/IMG_87231.jpg" style="max-height: 95%" class="img-fluid rounded" alt="Photo">
+            <img src="assets/img/IMG_87231.jpg" class="img-fluid rounded photo" alt="Photo">
           </div>
           <br>
           <div class="col-lg-7 d-flex flex-column align-items-stretch">
@@ -94,15 +99,15 @@
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>CV:</strong> <span><a href="assets/pdf/CV-Bord-Loris.pdf">Mon CV</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>CV:</strong> <span><a href="assets/pdf/CV%20Anthony%20Bord.pdf">Mon CV</a></span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Téléphone:</strong> <span>06 11 24 71 41</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Nice (France)</span></li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Diplome en cours:</strong> <span>A REMPLIR</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>A REMPLIR</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Diplome en cours:</strong> <span>Mastère Pro Stratégie de marque et communication digitale</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Anthony.bord99@gmail.com</span></li>
                   </ul>
                 </div>
               </div>
@@ -117,13 +122,14 @@
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Jouer aux jeux vidéos</strong></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Programmer de manière générale</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Sport (Musculation, Football, Fitness)</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Théatre (Expression libre)</strong></li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Développer mes compétences informatiques</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Création de contenu et storytelling</strong></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Lecture (Personal branding, mindset et marketing)</strong></li>
                   </ul>
                 </div>
               </div>
@@ -133,52 +139,53 @@
             <section id="skills" class="py-5">
               <div class="container">
                 <div class="section-title text-center">
-                  <h3><i></i>Compétences</i></h3>
+                  <h3>Compétences</h3>
                   <p class="text-muted">Communication digitale & création de contenu</p>
                 </div>
 
                 <div class="row g-4">
 
-                  <!-- Création & Design -->
+                  <!-- Marketing digital & acquisition -->
                   <div class="col-lg-4">
                     <div class="card h-100 shadow-lg border-0">
                       <div class="card-body text-center">
-                        <h4 class="mb-4"><i class="bi bi-brush"></i> Création & Design</h4>
+                        <h4 class="mb-4"><i class="bi bi-graph-up-arrow"></i> Marketing digital & acquisition</h4>
                         <ul class="list-unstyled text-start">
-                          <li>🎨 Adobe Photoshop, Illustrator</li>
-                          <li>🎥 Montage vidéo (Premiere Pro, Canva)</li>
-                          <li>📷 Photographie & retouche</li>
-                          <li>🖌️ Création de visuels réseaux sociaux</li>
+                          <li><i class="bi bi-bullseye me-2 text-primary"></i> Création & gestion de campagnes social ads (Meta, LinkedIn)</li>
+                          <li><i class="bi bi-search me-2 text-primary"></i> Référencement naturel (SEO) & optimisation des contenus</li>
+                          <li><i class="bi bi-envelope-paper me-2 text-primary"></i> Email marketing (stratégie, segmentation, automation)</li>
+                          <li><i class="bi bi-bar-chart-line me-2 text-primary"></i> Analyse des performances (KPI, reporting, recommandations)</li>
                         </ul>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Stratégie & Communication -->
+                  <!-- Stratégie de communication & branding -->
                   <div class="col-lg-4">
                     <div class="card h-100 shadow-lg border-0">
                       <div class="card-body text-center">
-                        <h4 class="mb-4"><i class="bi bi-megaphone"></i> Stratégie & Communication</h4>
+                        <h4 class="mb-4"><i class="bi bi-megaphone"></i> Stratégie de communication & branding</h4>
                         <ul class="list-unstyled text-start">
-                          <li>📢 Gestion de campagnes publicitaires</li>
-                          <li>📈 Analyse et optimisation (Google Analytics)</li>
-                          <li>📝 Rédaction web & storytelling</li>
-                          <li>📱 Stratégie réseaux sociaux (Facebook, Insta, TikTok)</li>
+                          <li><i class="bi bi-pencil-square me-2 text-warning"></i> Définition de l'identité de marque (storytelling)</li>
+                          <li><i class="bi bi-journal-text me-2 text-warning"></i> Création de plan de communication sur mesure (interne / externe)</li>
+                          <li><i class="bi bi-calendar-event me-2 text-warning"></i> Élaboration de calendriers éditoriaux</li>
+                          <li><i class="bi bi-binoculars me-2 text-warning"></i> Veille concurrentielle</li>
+                          <li><i class="bi bi-file-earmark-text me-2 text-warning"></i> Rédaction de contenus optimisés SMO</li>
                         </ul>
                       </div>
                     </div>
                   </div>
 
-                  <!-- Web & Technique -->
+                  <!-- Création visuelle & design graphique -->
                   <div class="col-lg-4">
                     <div class="card h-100 shadow-lg border-0">
                       <div class="card-body text-center">
-                        <h4 class="mb-4"><i class="bi bi-laptop"></i> Web & Technique</h4>
+                        <h4 class="mb-4"><i class="bi bi-brush"></i> Création visuelle & design graphique</h4>
                         <ul class="list-unstyled text-start">
-                          <li>🌐 HTML / CSS</li>
-                          <li>🖥️ CMS (WordPress, Shopify)</li>
-                          <li>🔍 SEO & SEA</li>
-                          <li>🛠️ Outils collaboratifs (Trello, Slack)</li>
+                          <li><i class="bi bi-instagram me-2 text-success"></i> Création de visuels réseaux sociaux (posts, stories, carrousels, infographies, réels)</li>
+                          <li><i class="bi bi-file-image me-2 text-success"></i> Réalisation de supports de communication (flyers, affiches, bannières)</li>
+                          <li><i class="bi bi-palette me-2 text-success"></i> Conception de kit branding</li>
+                          <li><i class="bi bi-laptop me-2 text-success"></i> Maquette web simple (landing pages, emailings)</li>
                         </ul>
                       </div>
                     </div>
@@ -187,6 +194,7 @@
                 </div>
               </div>
             </section>
+
 
 
 
@@ -210,22 +218,17 @@
 
             <h3 class="resume-title">Enseignement</h3>
             <div class="resume-item">
-              <h4>BUT informatique</h4>
-              <h5>2021 - 2024</h5>
-              <p><em>Bachelor universitaire technologique, Montpellier</em></p>
-              <p>Apprentissages approfondi des pratiques de développement d'applications, que ce soit développement web, mobile.</p>
-              <p> Développement backend avec les technologies JAVA, PHP (composants symfony et vanilla), MySql ou PostGreSQL.</p>
-              <p>Développement frontend avec les technologies HTML, CSS (bootstrap et vanilla), JavaScript.</p>
-              <p> Utilisation des paradigmes de programmations orienté objet et apprentissages des patrons de conception logiciel.</p>
-              <p> Développement d'interfaces graphiques avec JAVAFX.</p>
-              <p> Cycle de vie d'un logiciel et introduction à la qualité de développement (analyse, conception, tests unitaires, intégrations, fuzzing, développement piloté par les données/tests...</p>
-              <p>Management des systèmes d'informations, gestion de projet agile, comptabilité, économie.</p>
-            </div>
-            <div class="resume-item">
-              <h4>Baccalauréat STI2D SIN</h4>
-              <h5>2018 - 2021</h5>
-              <p><em>Sciences technologiques de l'industrie et du développement durable, option : système d'information et numérique.  Lycée LaSalle - Alès</em></p>
-              <p>Apprentissage des bases de l'électronique / programmation. Utilisation d'Arduino pour la réalisation de mini-projets (capteurs de mouvement, son, infra-rouges, empreintes, servomoteurs...)</p>
+              <h4>Bachelor Chargé de marketing et communication , Marketing digital</h4>
+              <h5>Octobre 2024 - Septembre 2025</h5>
+              <p><em>Bachelor Chargé de marketing et communication à l'ESCOM, Nice</em></p>
+              <p> Stratégie marketing et communication</p>
+              <p> Gestion et pilotage des campagnes digitales</p>
+              <p> Analyse des données et performance marketing</p>
+              <p> Droit du marketing et éco-conception</p>
+              <p> Création visuelle (Suite Adobe) et charte graphique</p>
+              <p> RSE, inclusion et accessibilité universelle</p>
+              <p> Anglais professionnel et outils d’insertion</p>
+              <p> Semaine de création d’entreprise</p>
             </div>
           </div>
         </div>
@@ -238,22 +241,59 @@
       <div class="container">
 
         <div class="section-title">
-          <span>Témoignages et avis</span>
-          <h2>Témoignages et avis</h2>
-          <p>Présentation de mon retour d'experience professionnel personnel</p>
+          <span>Témoignages</span>
+          <h2>Témoignages</h2>
+          <p>Recommandations à mon égards</p>
         </div>
 
         <div class="row">
-         <p>A REMPLIR
-           A REMPLIR
-           A REMPLIR
-           A REMPLIRA REMPLIRA REMPLIRA REMPLIRA REMPLIR
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
 
-           A REMPLIRA REMPLIR
+              <!-- Carte 1 -->
+              <div class="swiper-slide">
+                <div class="card h-100 shadow-sm border-0 p-4">
+                  <p class="mb-4">
+                    <i class="bi bi-quote text-secondary" style="font-size:2rem;"></i><br>
+                    "Ces qualités, associées à une bonne capacité d’analyse et un bon esprit d’équipe, me permettent de dire qu’Anthony saura être un bel atout dans toute structure cherchant un profil engagé, rigoureux et curieux."
+                  </p>
+                  <hr>
+                  <h5 class="mb-0">Ana Guimares</h5>
+                  <small class="text-muted">Professeure en stratégie de marque & communication</small>
+                  <div class="mt-3">
+                    <a href="assets/pdf/Lettre%20de%20recommandation%20Ana%20Guimares.pdf" download class="btn btn-warning btn-sm">
+                      <i class="bi bi-file-earmark-pdf"></i> Télécharger PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
 
+              <!-- Carte 2 -->
+              <div class="swiper-slide">
+                <div class="card h-100 shadow-sm border-0 p-4">
+                  <p class="mb-4">
+                    <i class="bi bi-quote text-secondary" style="font-size:2rem;"></i><br>
+                    "Son travail, à travers exercices et projets étudiant, m’a permis de juger ses excellentes capacités et compétences en digital."
+                  </p>
+                  <hr>
+                  <h5 class="mb-0">Lucas Grimont</h5>
+                  <small class="text-muted">Président de BrainyUP</small>
+                  <div class="mt-3">
+                    <a href="assets/pdf/Lettre%20de%20recommandation%20Anthony%20Bord%20-%20Lucas%20Grimont.pdf" download class="btn btn-warning btn-sm">
+                      <i class="bi bi-file-earmark-pdf"></i> Télécharger PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
 
+            </div>
 
-         </p>
+            <!-- Boutons de navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
 
       </div>
@@ -371,67 +411,59 @@
           <!-- Projet 1 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-img">
-              <img src="assets/img/poll.png"
+              <img src="assets/img/Refurbly.png"
                    class="img-fluid open-project"
-                   alt="PollHub"
-                   data-title="PollHub"
-                   data-tags="HTML CSS PHP Scrum MVC mySql"
-                   data-content="<p>Ce projet s’inscrit dans le cadre d’une SAÉ que nous avons réalisés en groupe de 5 personnes...</p>"
-                   data-image="assets/img/poll.png"
+                   alt="Refurbly"
+                   data-title="Refurbly"
+                   data-template="#projet1"
+                   data-tags="Création d'entreprise, analyse de marché, analyse concurentiel"
+                   data-content="<p>Tout premier projet fictif dans le cadre de la gestion e-commerce</p>"
+                   data-image="assets/img/Refurbly.png"
                    data-bs-toggle="modal"
                    data-bs-target="#projectModal">
             </div>
             <div class="portfolio-info">
-              <h4>PollHub</h4>
-              <p>HTML CSS PHP Scrum MVC mySql</p>
+              <h4>Refurbly</h4>
+              <p>Création d'entreprise, analyse de marché, analyse concurentiel</p>
             </div>
           </div>
 
           <!-- Projet 2 -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-img">
-              <img src="assets/img/Aventuriers_rail.png"
+              <img src="assets/img/dossier_analyse_gymshark.png"
                    class="img-fluid open-project"
-                   alt="Aventuriers du rail - Europe"
-                   data-title="Aventuriers du rail - Europe"
-                   data-tags="JAVA JAVAFX Graphes ergonomie"
+                   alt="Analyse gymshark"
+                   data-title="Dossier d'analyse de Gymshark"
+                   data-tags="Business model, analyse concurentiel, analyse UX/UI, axes d'améliorations possibles"
                    data-template="#projet2"
-                   data-image="assets/img/Aventuriers_rail.png"
+                   data-image="assets/img/dossier_analyse_gymshark.png"
                    data-bs-toggle="modal"
                    data-bs-target="#projectModal">
             </div>
             <div class="portfolio-info">
-              <h4>Aventuriers du rail - Europe</h4>
-              <p>JAVA JAVAFX Graphes ergonomie</p>
+              <h4>Dossier UX/UI Design et marketing expérientiel</h4>
+              <p>Business model, analyse concurentiel, analyse UX/UI, axes d'améliorations possibles</p>
             </div>
           </div>
 
           <!-- Projet 3 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img">
-              <img src="assets/img/sparkdestiny.png"
-                   class="img-fluid open-project"
-                   alt="Spark of Destiny"
-                   data-title="Spark of Destiny"
-                   data-tags="Unity C#"
-                   data-template="#projet3"
-                   data-image="assets/img/sparkdestiny.png"
-                   data-bs-toggle="modal"
-                   data-bs-target="#projectModal">
-            </div>
-            <div class="portfolio-info">
-              <h4>Spark of Destiny</h4>
-              <p>Unity C#</p>
-            </div>
-          </div>
 
         </div>
       </div>
     </section>
 
+    <template id="projet1">
+      <p>
+        Tout premier projet fictif dans le cadre de la gestion e-commerce : <a href="https://www.canva.com/design/DAGjrM30n_c/ezzLNsvciyfKYzc1hWT59w/view?utm_content=DAGjrM30n_c&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hdbb8d861b3#16">Présentation détaillée</a>
+      </p>
+    </template>
 
     <template id="projet2">
-
+      <p>
+        Le dossier analyse l’UX/UI de Gymshark, en optimisant le parcours utilisateur et la conversion via une stratégie e-commerce ciblée. Il identifie des axes d’amélioration UX, SEO et performance, tout en illustrant l’impact du marketing expérientiel à travers des références et une campagne immersive fictive :
+        <a href="https://www.canva.com/design/DAGccbftz54/Vm1crP1BM73apxuvOC43Ww/view?utm_content=DAGccbftz54&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd8ca722501#1">Dossier détaillée</a>
+      </p>
     </template>
 
     <template id="projet3">
@@ -457,7 +489,7 @@
                   <i class="bx bx-share-alt"></i>
                   <h3>Réseau professionnel</h3>
                   <div class="social-links">
-                    <a href="https://www.linkedin.com/in/loris-bord-10978222a/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/anthony-bord/?originalSubdomain=fr" class="linkedin"><i class="bi bi-linkedin"></i></a>
                   </div>
                 </div>
               </div>
@@ -465,14 +497,14 @@
                 <div class="info-box mt-4">
                   <i class="bx bx-envelope"></i>
                   <h3>Mail</h3>
-                  <p>loris.bord23@gmail.com</p>
+                  <p>Anthony.bord99@gmail.com</p>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="info-box mt-4">
                   <i class="bx bx-phone-call"></i>
                   <h3>Téléphone</h3>
-                  <p>07 81 53 14 20</p>
+                  <p>06 11 24 71 41</p>
                 </div>
               </div>
             </div>
@@ -515,7 +547,7 @@
     <div class="container">
       <h3>Anthony Bord</h3>
       <div class="social-links">
-        <a href="https://www.linkedin.com/in/loris-bord-10978222a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/anthony-bord/?originalSubdomain=fr" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Anthony Bord</span></strong>. All Rights Reserved
@@ -545,6 +577,29 @@
   <script src="assets/js/main.js" defer></script>
   <script src="https://smtpjs.com/v3/smtp.js" defer></script>
   <script src="assets/js/mail.js" defer></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        992: { slidesPerView: 3 }
+      }
+    });
+  </script>
 
 
 </body>
