@@ -347,6 +347,10 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".fade-up-title").forEach(el => {
     observer.observe(el);
   });
+
+  document.querySelectorAll(".fade-up-photo").forEach(el => {
+    observer.observe(el);
+  });
 });
 
 

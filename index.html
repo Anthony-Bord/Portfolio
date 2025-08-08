@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio Anthony Bord</title>
+  <title>Portfolio | Anthony Bord</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -31,12 +31,6 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-  <!-- =======================================================
-  * Template Name: Laura - v4.10.0
-  * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -90,23 +84,23 @@
         <br>
 
         <div class="row">
-          <div class="image col-lg-5 d-flex align-items-stretch justify-content-center">
-            <img src="assets/img/IMG_87231.jpg" class="img-fluid rounded photo" alt="Photo">
+          <div class="image col-md-12 col-lg-5 d-flex align-items-stretch justify-content-center p-4 p-lg-0 fade-up-photo">
+            <img src="assets/img/IMG-20250808-WA0000.jpg" class="img-fluid rounded photo" alt="Photo">
           </div>
           <br>
-          <div class="col-lg-7 d-flex flex-column align-items-stretch">
+          <div class="col-md-12 col-lg-7 d-flex flex-column align-items-stretch">
             <div class="content ps-lg-4 d-flex flex-column justify-content-center">
               <div class="row">
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>CV:</strong> <span><a href="assets/pdf/CV%20Anthony%20Bord.pdf">Mon CV</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>CV:</strong>  <a href="assets/pdf/CV%20Anthony%20Bord.pdf" class="cv-link">Mon CV</a>
                     <li><i class="bi bi-chevron-right"></i> <strong>Téléphone:</strong> <span>06 11 24 71 41</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Nice (France)</span></li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
                   <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Diplome en cours:</strong> <span>Mastère Pro Stratégie de marque et communication digitale</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Diplome:</strong> <span>Mastère Pro Stratégie de marque et communication digitale (en cours)</span></li>
                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>Anthony.bord99@gmail.com</span></li>
                   </ul>
                 </div>
@@ -306,6 +300,24 @@
                 </div>
               </div>
 
+              <div class="swiper-slide">
+                <div class="card h-100 shadow-sm border-0 p-4">
+                  <p class="mb-4">
+                    <i class="bi bi-quote text-secondary" style="font-size:2rem;"></i><br>
+                    "Anthony à démontré une bonne capacité d'adaptation, un esprit critique constructif et une aptitude à relier la théorie aux situations professionnelles réelles."
+                  </p>
+                  <hr>
+                  <h5 class="mb-0">Frédéric GIMENES</h5>
+                  <small class="text-muted">Fondateur et dirigeant Zola Développement</small>
+                  <div class="mt-3">
+                    <a href="assets/pdf/Capture%20d’écran_8-8-2025_175138_www.linkedin.pdf" download class="btn btn-style btn-sm">
+                      <i class="bi bi-file-earmark-pdf"></i> Télécharger PDF
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
 
             <!-- Boutons de navigation -->
@@ -361,6 +373,7 @@
                 </p>
               </div>
             </div><!-- End testimonial item -->
+
 
           </div>
           <div class="swiper-pagination"></div>
@@ -483,6 +496,43 @@
       Projet fictif sur le marketing Olfactif : <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:567aa3a5-5268-417b-8d14-41d1759363e9?viewer%21megaVerb=group-discover">Présentation</a>
     </template>
 
+
+    <!-- ========= Caroussel d'images ========= -->
+
+    <section id="images" class="images">
+      <div class="container">
+
+        <div class="section-title">
+          <span>Photos</span>
+          <h2 class="fade-up-title">Photos</h2>
+        </div>
+
+        <div class="row">
+          <div class="swiper mySwiper-photos">
+            <div class="swiper-wrapper">
+
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img src="assets/img/IMG_87231.jpg" class="img-fluid rounded carousel-photo" alt="Photo 1">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/IMG_87231.jpg" class="img-fluid rounded carousel-photo" alt="Photo 1">
+              </div>
+              <!-- Ajoute autant de photos que tu veux ici -->
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ======= Contact Me Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
@@ -599,6 +649,10 @@
       slidesPerView: 1,
       spaceBetween: 20,
       loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true
@@ -609,8 +663,26 @@
       },
       breakpoints: {
         768: { slidesPerView: 2 },
-        992: { slidesPerView: 3 }
+        992: { slidesPerView: 2 }
       }
+    });
+
+    var swiper2 = new Swiper(".mySwiper-photos", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
   </script>
 
