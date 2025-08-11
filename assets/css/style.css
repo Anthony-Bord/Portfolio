@@ -1745,6 +1745,7 @@ body.modal-open {
 
 .btn-style {
   background-color: #ff914d;
+  color: white;
 }
 
 .btn-style:hover {
@@ -1850,7 +1851,7 @@ body.modal-open {
 .experience-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 667px;
   min-height: 520px;               /* ajuste la valeur selon ton design */
   border: none;
   border-radius: 18px;
