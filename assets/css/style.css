@@ -1851,7 +1851,7 @@ body.modal-open {
 .experience-card {
   display: flex;
   flex-direction: column;
-  height: 667px;
+  height: 700px;
   min-height: 520px;               /* ajuste la valeur selon ton design */
   border: none;
   border-radius: 18px;
@@ -1875,6 +1875,6 @@ body.modal-open {
 }
 
 @media (max-width: 768px){
-  .experience-card { min-height: 460px; }
+  .experience-card { min-height: 750px; }
   .logo-wrap { width: 100px; height: 100px; }
 }
