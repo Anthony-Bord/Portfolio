@@ -1247,7 +1247,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #ff914d;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1747,6 +1747,10 @@ body.modal-open {
   background-color: #ff914d;
 }
 
+.btn-style:hover {
+  background-color: #ffa36c;
+}
+
 .fade-up-title {
   opacity: 0;
   transform: translateY(20px); /* décalé vers le bas */
@@ -1793,4 +1797,83 @@ body.modal-open {
 }
 .cv-link:hover {
   text-decoration: underline;
+}
+
+.portfolio-link-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #ff8c42;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.portfolio-link-icon:hover {
+  background-color: darkorange;
+}
+
+#hero img {
+  max-width: 350px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #hero img {
+    max-width: 220px;
+  }
+}
+
+/*#experiences .experience-card { border: none; }*/
+/*#experiences .logo-wrap {*/
+/*  width: 120px; height: 120px; background:#fff; border-radius:50%;*/
+/*  display:grid; place-items:center;*/
+/*}*/
+/*#experiences .logo-wrap img { max-width:70%; height:auto; }*/
+
+/*@media (max-width: 768px){*/
+/*  #experiences .logo-wrap { width:100px; height:100px; }*/
+/*}*/
+
+/* Étire les slides à la même hauteur */
+.mySwiper-experiences .swiper-wrapper {
+  align-items: stretch;            /* flex align: stretch sur la rangée */
+}
+.mySwiper-experiences .swiper-slide {
+  display: flex;                   /* pour que la carte puisse prendre 100% */
+}
+
+/* La carte remplit tout le slide */
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 520px;               /* ajuste la valeur selon ton design */
+  border: none;
+  border-radius: 18px;
+}
+
+/* Logo rond qui remplit bien son cadre */
+.logo-wrap {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 6px 16px rgba(0,0,0,.15);
+}
+.logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               /* remplit le cercle */
+}
+
+@media (max-width: 768px){
+  .experience-card { min-height: 460px; }
+  .logo-wrap { width: 100px; height: 100px; }
 }
